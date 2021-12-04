@@ -2,7 +2,7 @@
 const { Router } = require("express");
 
 //import api routes
-const apiRoutes = require("./api");
+const apiRoutes = require("./api/index");
 
 //import notes page routes
 const viewRoutes = require("./view/viewRoutes");

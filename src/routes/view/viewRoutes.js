@@ -5,9 +5,13 @@ const { Router } = require("express");
 const router = Router();
 
 //import view notes controller fs
-const { viewNotes } = require("../../controllers/view/viewNotes");
+const { viewNotes, viewIndex } = require("../../controllers/view/viewNotes");
 
-//create a get notes html path
-router.get("./notes", viewNotes);
+//create a view notes html path
+router.use("./notes", viewNotes);
+
+//create a view index page path
+router.use("*", viewIndex);
+
 //export router
 module.exports = router;

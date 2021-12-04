@@ -2,13 +2,13 @@
 const { Router } = require("express");
 
 //import notes routes
-const viewRoutes = require("../view/viewRoutes");
+const notesRoutes = require("./notesRoutes");
 
 //create a router
 const router = Router();
 
 //register "api" endpoint to get notes
-router.use("/notes", viewRoutes);
+router.use("/notes", notesRoutes);
 
 //export router
 module.exports = router;
