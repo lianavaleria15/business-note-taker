@@ -2,7 +2,7 @@
 const { Router } = require("express");
 
 //import notes routes
-const noteRoutes = require("./notesRoutes");
+const notesRoutes = require("./notesRoutes");
 
 //create a router
 const router = Router();
