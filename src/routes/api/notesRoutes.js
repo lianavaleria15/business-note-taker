@@ -1,6 +1,5 @@
 //export router from express
 const { Router } = require("express");
-const { route } = require(".");
 
 //import controller functions
 const {
@@ -13,7 +12,7 @@ const {
 const router = Router();
 
 //register a get notes path
-route.get("./", getNotes);
+router.get("./", getNotes);
 
 //register a post note path
 router.post("./notes", postNote);
