@@ -2,6 +2,13 @@
 const { Router } = require("express");
 const { route } = require(".");
 
+//import controller functions
+const {
+  getNotes,
+  postNote,
+  deleteNote,
+} = require("../../controllers/api/note");
+
 //create a router
 const router = Router();
 
