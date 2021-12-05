@@ -13,7 +13,7 @@ const router = Router();
 router.use("/api", apiRoutes);
 
 //register notes page endpoint
-router.use("./", viewRoutes);
+router.use("/", viewRoutes);
 
 //export router
 module.exports = router;

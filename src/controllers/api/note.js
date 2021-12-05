@@ -1,6 +1,7 @@
 //add controller functions for notesRoutes
 const getNotes = (req, res) => {
-  res.send("getNotes");
+  //get all notes
+  //send response of all notes
 };
 
 const postNote = (req, res) => {

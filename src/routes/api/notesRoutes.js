@@ -12,13 +12,13 @@ const {
 const router = Router();
 
 //register a get notes path
-router.get("./", getNotes);
+router.get("/", getNotes);
 
 //register a post note path
-router.post("./notes", postNote);
+router.post("/notes", postNote);
 
 //register a delete note path
-router.delete("./:id", deleteNote);
+router.delete("/:id", deleteNote);
 
 //export router
 module.exports = router;
