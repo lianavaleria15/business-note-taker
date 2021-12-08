@@ -12,9 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.json());
 //connect server to routes
-// app.use(routes);
+app.use(routes);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () =>
-  console.log(`Server running on htttp://localhost:${PORT}`)
+  console.log(`Server running on http://localhost:${PORT}`)
 );

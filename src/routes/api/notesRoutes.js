@@ -15,7 +15,7 @@ const router = Router();
 router.get("/", getNotes);
 
 //register a post note path
-router.post("/notes", postNote);
+router.post("/", postNote);
 
 //register a delete note path
 router.delete("/:id", deleteNote);
