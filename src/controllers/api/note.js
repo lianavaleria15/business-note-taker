@@ -24,8 +24,12 @@ const getNotes = (req, res) => {
 
 const postNote = (req, res) => {
   // read data from db.json
+  const notes = readFromFile(DB_FILE_PATH);
+  console.log(notes);
 
   // get payload from req body
+  const payload = req.body;
+  console.log(payload);
 
   // push new note to notes
 
